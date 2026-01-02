@@ -7,6 +7,7 @@ import WeeklyReview from './pages/WeeklyReview';
 import MonthlyReview from './pages/MonthlyReview';
 import Login from './pages/Login';
 import Register from './pages/Register';
+import Account from './pages/Account';
 import { AuthProvider, useAuth } from './context/AuthContext';
 
 const ProtectedRoute = () => {
@@ -35,6 +36,7 @@ const App: React.FC = () => {
               <Route path="tracker" element={<HabitTracker />} />
               <Route path="weekly-review" element={<WeeklyReview />} />
               <Route path="monthly-review" element={<MonthlyReview />} />
+              <Route path="account" element={<Account />} />
               <Route path="*" element={<Navigate to="/" replace />} />
             </Route>
           </Route>

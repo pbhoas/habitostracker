@@ -277,7 +277,7 @@ const HabitTracker: React.FC = () => {
                                 {new Date().toLocaleDateString('es-ES', { weekday: 'long', day: 'numeric', month: 'short' })}
                             </p>
                             <h1 className="text-slate-900 dark:text-white text-3xl md:text-4xl font-black tracking-tight">
-                                Hola, {user?.email?.split('@')[0]}
+                                Hola, {user?.user_metadata?.full_name || user?.email?.split('@')[0]}
                             </h1>
                         </div>
                         <button

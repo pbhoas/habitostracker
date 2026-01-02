@@ -65,6 +65,11 @@ const Layout: React.FC = () => {
             <SidebarItem to="/monthly-review" icon={CalendarDays} label="Revisión Mensual" />
           </nav>
 
+          <div className="space-y-2">
+            <div className="h-px bg-slate-100 dark:bg-slate-800 my-2 mx-2"></div>
+            <SidebarItem to="/account" icon={User} label="Mi Cuenta" />
+          </div>
+
           {/* Bottom Actions */}
           <div className="mt-auto pt-6 border-t border-slate-100 dark:border-slate-800 space-y-4">
             <div className="flex items-center gap-3 px-4 py-2 rounded-xl bg-slate-50 dark:bg-slate-800/50 border border-slate-100 dark:border-slate-700/50">
